@@ -64,8 +64,8 @@ npm run test:coverage
 A development preview can also be run from docker:
 
 ```shell
-docker build -t open-sauced-dev .
-docker run -p 8080:80 open-sauced-dev
+docker build -t open-sauced-template .
+docker run -p 8080:80 open-sauced-template
 ```
 
 Alternatively you can pull the production container and skip all builds:

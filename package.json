@@ -34,7 +34,9 @@
     "test": "npx jest --config ./.jest/jest.config.cjs",
     "test:watch": "npm run test -- --watch",
     "test:all": "npm run test -- --silent --watchAll=false",
-    "test:coverage": "npm run test:all -- --coverage"
+    "test:coverage": "npm run test:all -- --coverage",
+    "lint": "npx eslint . --report-unused-disable-directives",
+    "format": "npm run lint -- --fix"
   },
   "dependencies": {
     "react": "^17.0.2",
@@ -52,11 +54,19 @@
     "@types/node": "^17.0.21",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
+    "@types/testing-library__jest-dom": "^5.14.2",
+    "@typescript-eslint/eslint-plugin": "^5.12.1",
+    "@typescript-eslint/parser": "^5.12.1",
     "@vitejs/plugin-legacy": "^1.7.1",
     "@vitejs/plugin-react": "^1.0.7",
     "camelcase": "^6.3.0",
     "esbuild": "^0.14.23",
     "esbuild-jest": "^0.5.0",
+    "eslint": "^8.10.0",
+    "eslint-config-typescript": "^3.0.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react-hooks": "^4.3.0",
     "execa": "^6.1.0",
     "glob": "^7.2.0",
     "identity-obj-proxy": "^3.0.0",
@@ -71,6 +81,7 @@
     "typescript": "^4.5.4",
     "vite": "^2.8.0",
     "vite-plugin-html": "^3.0.6",
-    "vite-plugin-inspect": "^0.4.3"
+    "vite-plugin-inspect": "^0.4.3",
+    "whatwg-fetch": "^3.6.2"
   }
 }
