@@ -1,12 +1,12 @@
 {
   "name": "open-sauced-vite-ts-template-test",
-  "version": "0.0.0-development",
+  "version": "1.0.0",
   "lockfileVersion": 3,
   "requires": true,
   "packages": {
     "": {
       "name": "open-sauced-vite-ts-template-test",
-      "version": "0.0.0-development",
+      "version": "1.0.0",
       "license": "MIT",
       "dependencies": {
         "react": "^17.0.2",
