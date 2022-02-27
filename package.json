@@ -31,7 +31,7 @@
     "build:analyze": "npm run build -- --mode report",
     "build:svgo": "npx svgo src/**/*.svg --config ./.svgorc.cjs",
     "build:squoosh": "node .squoosh.mjs '{src,public}/**/*.{jpg,jpeg,png,gif}'",
-    "test": "npx jest --config ./.jest/jest.config.cjs",
+    "test": "npx jest --config ./.jest/jest.config.cjs --passWithNoTests",
     "test:watch": "npm run test -- --watch",
     "test:all": "npm run test -- --silent --watchAll=false",
     "test:coverage": "npm run test:all -- --coverage",
@@ -43,6 +43,7 @@
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
+    "@nabla/vite-plugin-eslint": "^1.4.0",
     "@open-sauced/check-engines": "^1.2.0",
     "@open-sauced/conventional-commit": "^1.0.1",
     "@squoosh/cli": "^0.7.2",

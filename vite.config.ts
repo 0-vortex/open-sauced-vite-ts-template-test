@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite'
 import { createHtmlPlugin } from 'vite-plugin-html'
 import { execaSync } from 'execa'
+import ViteEslint from '@nabla/vite-plugin-eslint'
 import ViteInspect from 'vite-plugin-inspect'
 import ViteLegacy from '@vitejs/plugin-legacy'
 import ViteReact from '@vitejs/plugin-react'
@@ -53,6 +54,7 @@ export default defineConfig(({command, mode}: ConfigEnv): UserConfig => {
   };
 
   config.plugins.push(
+    ViteEslint(),
     ViteInspect(),
     ViteReact({
       fastRefresh: !isTest,
