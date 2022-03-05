@@ -5,6 +5,13 @@
 
 > All notable changes to this project will be documented in this file
 
+## [1.1.0](https://github.com/0-vortex/open-sauced-vite-ts-template-test/compare/v1.0.0...v1.1.0) (2022-03-05)
+
+
+### 🍕 Features
+
+* merge upstream changes ([58b1751](https://github.com/0-vortex/open-sauced-vite-ts-template-test/commit/58b17517e25fc3ed6a50f6962f89d28a8932d17b))
+
 ## 1.0.0 (2022-02-27)
 
 
